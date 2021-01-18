@@ -1,0 +1,9 @@
+{
+  "post":{
+  "id": "string",
+  "createdAt": "number",
+  "title": "string",
+  "body": "string",
+  "author": "string"
+}
+}
