@@ -7,6 +7,7 @@ const typeDefs = gql`
     title: String!
     body: String!
     author: String!
+    createdAt: Int!
   }
   type User {
     name: String!
@@ -23,7 +24,7 @@ const typeDefs = gql`
   }
   type Mutation {
     createPost(input: PostInput!): Post!
-    deletePost(input: ID!): [Post]
+    deletePost(input: ID!): String!
   }
 `;
 

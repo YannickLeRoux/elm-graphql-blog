@@ -25,6 +25,7 @@ const createPostModel = db => {
     },
     deletePost(id) {
       db.get('posts').remove({id}).write()
+      return `Deleted pet with id: ${id}`
     }
   }
 }
