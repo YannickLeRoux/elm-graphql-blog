@@ -1,6 +1,6 @@
 module Pages.Top exposing (Model, Msg, Params, page)
 
-import Element exposing (..)
+import Element exposing (Element, alignRight, centerY, el, fill, padding, rgb255, row, spacing, text, width)
 import Spa.Document exposing (Document)
 import Spa.Page as Page exposing (Page)
 import Spa.Url exposing (Url)
@@ -32,5 +32,7 @@ page =
 view : Url Params -> Document Msg
 view { params } =
     { title = "Homepage"
-    , body = [ text "Homepage" ]
+    , body =
+        [ el [] (text "Yannick")
+        ]
     }
